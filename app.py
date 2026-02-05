@@ -1,7 +1,7 @@
 import streamlit as st
 
 # 1. Configuración de la página
-st.set_page_config(page_title="Rebajas 3º ESO", page_icon="🛍️")
+st.set_page_config(page_title="Rebajas 3º ESO", page_icon="🎉")
 
 # Título y descripción
 st.title("🏷 Calculadora de Rebajas")
@@ -43,14 +43,14 @@ if st.button("Calcular ahora"):
         st.metric("Ahorras (€)", f"{ahorro:.2f}")
 
         if descuento == 0:
-            st.info("ℹ️ No hay descuento aplicado")
+            st.info("ℹ️ sin descuento")
         elif descuento < 20:
-            st.warning("🟡 no hay mucha diferencia")
+            st.warning("🟡 no esta mal")
         elif descuento < 50:
-            st.success("✅ ¡Buen descuento!")
+            st.success("✅ ¡bastante bien!")
             st.balloons()
         else:
-            st.success("🔥 ¡Compralo ya!")
+            st.success("🔥 ¡la ocasion perfecta para comprarlo!")
 
     # Extra: fórmula matemática
     st.write("---")
